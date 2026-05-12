@@ -1,0 +1,14 @@
+{
+  "name": "smeflow-dashboard",
+  "doctype": "Page",
+  "module": "SMEFlow HR",
+  "page_name": "smeflow-dashboard",
+  "title": "SMEFlow Dashboard",
+  "standard": "Yes",
+  "roles": [
+    {"role": "SME HR Manager"},
+    {"role": "SME Finance"},
+    {"role": "SME Employee"},
+    {"role": "System Manager"}
+  ]
+}
