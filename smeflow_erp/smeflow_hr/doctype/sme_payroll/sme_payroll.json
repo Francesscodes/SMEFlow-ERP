@@ -1,0 +1,26 @@
+{
+  "name": "SME Payroll",
+  "doctype": "DocType",
+  "module": "SMEFlow HR",
+  "is_submittable": 1,
+  "track_changes": 1,
+  "title_field": "employee",
+  "fields": [
+    {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "SME Employee", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "payroll_month", "fieldtype": "Select", "label": "Month", "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "payroll_year", "fieldtype": "Int", "label": "Year", "reqd": 1},
+    {"fieldname": "basic_salary", "fieldtype": "Currency", "label": "Basic Salary", "reqd": 1},
+    {"fieldname": "transport_allowance", "fieldtype": "Currency", "label": "Transport Allowance"},
+    {"fieldname": "housing_allowance", "fieldtype": "Currency", "label": "Housing Allowance"},
+    {"fieldname": "other_allowances", "fieldtype": "Currency", "label": "Other Allowances"},
+    {"fieldname": "gross_pay", "fieldtype": "Currency", "label": "Gross Pay", "in_list_view": 1},
+    {"fieldname": "tax_deduction", "fieldtype": "Currency", "label": "Tax (PAYE)"},
+    {"fieldname": "pension_deduction", "fieldtype": "Currency", "label": "Pension"},
+    {"fieldname": "other_deductions", "fieldtype": "Currency", "label": "Other Deductions"},
+    {"fieldname": "net_pay", "fieldtype": "Currency", "label": "Net Pay", "in_list_view": 1},
+    {"fieldname": "payment_status", "fieldtype": "Select", "label": "Payment Status", "options": "Unpaid\nPaid", "default": "Unpaid", "in_list_view": 1}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1}
+  ]
+}

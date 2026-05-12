@@ -1,0 +1,17 @@
+{
+  "name": "SMEFlow HR",
+  "title": "SMEFlow HR",
+  "doctype": "Workspace",
+  "module": "SMEFlow HR",
+  "label": "SMEFlow HR",
+  "icon": "users",
+  "is_standard": 1,
+  "content": "[]",
+  "shortcuts": [
+    {"label": "SME Employee", "link_to": "SME Employee", "type": "DocType"},
+    {"label": "SME Attendance", "link_to": "SME Attendance", "type": "DocType"},
+    {"label": "SME Leave Application", "link_to": "SME Leave Application", "type": "DocType"},
+    {"label": "SME Payroll", "link_to": "SME Payroll", "type": "DocType"},
+    {"label": "SME Expense Claim", "link_to": "SME Expense Claim", "type": "DocType"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "SME Employee",
+  "doctype": "DocType",
+  "module": "SMEFlow HR",
+  "custom": 0,
+  "is_submittable": 0,
+  "istable": 0,
+  "issingle": 0,
+  "track_changes": 1,
+  "autoname": "field:employee_id",
+  "title_field": "full_name",
+  "fields": [
+    {"fieldname": "full_name", "fieldtype": "Data", "label": "Full Name", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "employee_id", "fieldtype": "Data", "label": "Employee ID", "reqd": 1},
+    {"fieldname": "department", "fieldtype": "Data", "label": "Department", "in_list_view": 1},
+    {"fieldname": "designation", "fieldtype": "Data", "label": "Designation"},
+    {"fieldname": "date_of_joining", "fieldtype": "Date", "label": "Date of Joining"},
+    {"fieldname": "employment_type", "fieldtype": "Select", "label": "Employment Type", "options": "Full-Time\nPart-Time\nContract"},
+    {"fieldname": "phone", "fieldtype": "Data", "label": "Phone"},
+    {"fieldname": "email", "fieldtype": "Data", "label": "Email"},
+    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Active\nInactive\nResigned", "in_list_view": 1}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+  ]
+}

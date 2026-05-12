@@ -1,0 +1,22 @@
+{
+  "name": "SME Attendance",
+  "doctype": "DocType",
+  "module": "SMEFlow HR",
+  "custom": 0,
+  "is_submittable": 1,
+  "istable": 0,
+  "issingle": 0,
+  "track_changes": 1,
+  "title_field": "employee",
+  "fields": [
+    {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "SME Employee", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "attendance_date", "fieldtype": "Date", "label": "Attendance Date", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Present\nAbsent\nHalf Day\nOn Leave", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "check_in", "fieldtype": "Time", "label": "Check In"},
+    {"fieldname": "check_out", "fieldtype": "Time", "label": "Check Out"},
+    {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1}
+  ]
+}

@@ -1,0 +1,52 @@
+{
+ "charts": [],
+ "content": "[]",
+ "creation": "2026-05-12 10:41:04.276817",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "SMEFlow HR",
+ "links": [],
+ "modified": "2026-05-12 10:54:15.270800",
+ "modified_by": "ekezieezinne@gmail.com",
+ "module": "SMEFlow HR",
+ "name": "SMEFlow HR",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "label": "SME Employee",
+   "link_to": "SME Employee",
+   "type": "DocType"
+  },
+  {
+   "label": "SME Attendance",
+   "link_to": "SME Attendance",
+   "type": "DocType"
+  },
+  {
+   "label": "SME Leave Application",
+   "link_to": "SME Leave Application",
+   "type": "DocType"
+  },
+  {
+   "label": "SME Payroll",
+   "link_to": "SME Payroll",
+   "type": "DocType"
+  },
+  {
+   "label": "SME Expense Claim",
+   "link_to": "SME Expense Claim",
+   "type": "DocType"
+  }
+ ],
+ "title": "SMEFlow HR"
+}
