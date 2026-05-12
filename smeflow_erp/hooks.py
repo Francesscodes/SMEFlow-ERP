@@ -247,3 +247,9 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+doc_events = {
+    "SME Leave Application": {
+        "on_submit": "smeflow_erp.smeflow_hr.doctype.sme_leave_application.sme_leave_application.send_leave_notification"
+    }
+}

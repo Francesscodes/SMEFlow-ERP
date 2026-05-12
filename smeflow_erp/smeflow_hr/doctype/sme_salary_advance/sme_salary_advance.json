@@ -1,0 +1,26 @@
+{
+  "name": "SME Salary Advance",
+  "doctype": "DocType",
+  "module": "SMEFlow HR",
+  "is_submittable": 1,
+  "track_changes": 1,
+  "title_field": "employee",
+  "fields": [
+    {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "SME Employee", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "advance_date", "fieldtype": "Date", "label": "Advance Date", "reqd": 1},
+    {"fieldname": "amount", "fieldtype": "Currency", "label": "Advance Amount", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "reason", "fieldtype": "Small Text", "label": "Reason for Advance"},
+    {"fieldname": "repayment_months", "fieldtype": "Int", "label": "Repayment Period (Months)", "reqd": 1},
+    {"fieldname": "monthly_deduction", "fieldtype": "Currency", "label": "Monthly Deduction"},
+    {"fieldname": "amount_repaid", "fieldtype": "Currency", "label": "Amount Repaid", "default": "0"},
+    {"fieldname": "outstanding_amount", "fieldtype": "Currency", "label": "Outstanding Amount", "in_list_view": 1},
+    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nPending Approval\nApproved\nRejected\nFully Repaid", "default": "Draft", "in_list_view": 1},
+    {"fieldname": "approved_by", "fieldtype": "Link", "label": "Approved By", "options": "User"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1},
+    {"role": "SME HR Manager", "read": 1, "write": 1, "create": 1, "submit": 1},
+    {"role": "SME Finance", "read": 1, "write": 1, "submit": 1},
+    {"role": "SME Employee", "read": 1, "write": 1, "create": 1}
+  ]
+}

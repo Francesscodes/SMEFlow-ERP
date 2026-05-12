@@ -1,0 +1,28 @@
+{
+  "name": "SME Intern Payroll",
+  "doctype": "DocType",
+  "module": "SMEFlow HR",
+  "is_submittable": 1,
+  "track_changes": 1,
+  "title_field": "intern_name",
+  "fields": [
+    {"fieldname": "intern_name", "fieldtype": "Link", "label": "Intern", "options": "SME Employee", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "department", "fieldtype": "Data", "label": "Department"},
+    {"fieldname": "payroll_month", "fieldtype": "Select", "label": "Month", "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "payroll_year", "fieldtype": "Int", "label": "Year", "reqd": 1},
+    {"fieldname": "monthly_stipend", "fieldtype": "Currency", "label": "Monthly Stipend", "reqd": 1},
+    {"fieldname": "transport_allowance", "fieldtype": "Currency", "label": "Transport Allowance"},
+    {"fieldname": "meal_allowance", "fieldtype": "Currency", "label": "Meal Allowance"},
+    {"fieldname": "days_worked", "fieldtype": "Int", "label": "Days Worked"},
+    {"fieldname": "days_absent", "fieldtype": "Int", "label": "Days Absent"},
+    {"fieldname": "deduction_for_absence", "fieldtype": "Currency", "label": "Deduction for Absence"},
+    {"fieldname": "total_payable", "fieldtype": "Currency", "label": "Total Payable", "in_list_view": 1},
+    {"fieldname": "payment_status", "fieldtype": "Select", "label": "Payment Status", "options": "Unpaid\nPaid", "default": "Unpaid", "in_list_view": 1},
+    {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1},
+    {"role": "SME HR Manager", "read": 1, "write": 1, "create": 1, "submit": 1},
+    {"role": "SME Finance", "read": 1, "write": 1, "submit": 1}
+  ]
+}
