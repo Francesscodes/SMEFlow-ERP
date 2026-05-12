@@ -1,26 +1,106 @@
 {
-  "name": "SME Employee",
-  "doctype": "DocType",
-  "module": "SMEFlow HR",
-  "custom": 0,
-  "is_submittable": 0,
-  "istable": 0,
-  "issingle": 0,
-  "track_changes": 1,
-  "autoname": "field:employee_id",
-  "title_field": "full_name",
-  "fields": [
-    {"fieldname": "full_name", "fieldtype": "Data", "label": "Full Name", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "employee_id", "fieldtype": "Data", "label": "Employee ID", "reqd": 1},
-    {"fieldname": "department", "fieldtype": "Data", "label": "Department", "in_list_view": 1},
-    {"fieldname": "designation", "fieldtype": "Data", "label": "Designation"},
-    {"fieldname": "date_of_joining", "fieldtype": "Date", "label": "Date of Joining"},
-    {"fieldname": "employment_type", "fieldtype": "Select", "label": "Employment Type", "options": "Full-Time\nPart-Time\nContract"},
-    {"fieldname": "phone", "fieldtype": "Data", "label": "Phone"},
-    {"fieldname": "email", "fieldtype": "Data", "label": "Email"},
-    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Active\nInactive\nResigned", "in_list_view": 1}
-  ],
-  "permissions": [
-    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
-  ]
+ "actions": [],
+ "autoname": "field:employee_id",
+ "creation": "2026-05-12 10:22:58.100761",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "employee_id",
+  "department",
+  "designation",
+  "date_of_joining",
+  "employment_type",
+  "phone",
+  "email",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Select",
+   "label": "Employment Type",
+   "options": "Full-Time\nPart-Time\nContract"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive\nResigned"
+  }
+ ],
+ "links": [],
+ "modified": "2026-05-12 11:23:31.784888",
+ "modified_by": "Administrator",
+ "module": "SMEFlow HR",
+ "name": "SME Employee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SME HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "track_changes": 1
 }

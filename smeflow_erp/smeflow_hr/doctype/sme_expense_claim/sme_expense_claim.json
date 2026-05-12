@@ -1,22 +1,147 @@
 {
-  "name": "SME Expense Claim",
-  "doctype": "DocType",
-  "module": "SMEFlow HR",
-  "is_submittable": 1,
-  "track_changes": 1,
-  "title_field": "employee",
-  "fields": [
-    {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "SME Employee", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "expense_date", "fieldtype": "Date", "label": "Expense Date", "reqd": 1},
-    {"fieldname": "expense_category", "fieldtype": "Select", "label": "Category", "options": "Travel\nAccommodation\nMeals\nSupplies\nCommunication\nOther", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "amount", "fieldtype": "Currency", "label": "Amount", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"},
-    {"fieldname": "receipt_attached", "fieldtype": "Check", "label": "Receipt Attached"},
-    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Draft\nPending Approval\nApproved\nRejected\nPaid", "default": "Draft", "in_list_view": 1},
-    {"fieldname": "approved_by", "fieldtype": "Link", "label": "Approved By", "options": "User"},
-    {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
-  ],
-  "permissions": [
-    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1}
-  ]
+ "actions": [],
+ "creation": "2026-05-12 10:35:21.026712",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "expense_date",
+  "expense_category",
+  "amount",
+  "description",
+  "receipt_attached",
+  "status",
+  "approved_by",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "SME Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_date",
+   "fieldtype": "Date",
+   "label": "Expense Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Travel\nAccommodation\nMeals\nSupplies\nCommunication\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "receipt_attached",
+   "fieldtype": "Check",
+   "label": "Receipt Attached"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nPending Approval\nApproved\nRejected\nPaid"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SME Expense Claim",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-12 11:23:37.851990",
+ "modified_by": "Administrator",
+ "module": "SMEFlow HR",
+ "name": "SME Expense Claim",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SME HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SME Finance",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SME Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee",
+ "track_changes": 1
 }

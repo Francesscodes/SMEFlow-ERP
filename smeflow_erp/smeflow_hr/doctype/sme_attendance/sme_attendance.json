@@ -1,22 +1,110 @@
 {
-  "name": "SME Attendance",
-  "doctype": "DocType",
-  "module": "SMEFlow HR",
-  "custom": 0,
-  "is_submittable": 1,
-  "istable": 0,
-  "issingle": 0,
-  "track_changes": 1,
-  "title_field": "employee",
-  "fields": [
-    {"fieldname": "employee", "fieldtype": "Link", "label": "Employee", "options": "SME Employee", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "attendance_date", "fieldtype": "Date", "label": "Attendance Date", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Present\nAbsent\nHalf Day\nOn Leave", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "check_in", "fieldtype": "Time", "label": "Check In"},
-    {"fieldname": "check_out", "fieldtype": "Time", "label": "Check Out"},
-    {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
-  ],
-  "permissions": [
-    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1}
-  ]
+ "actions": [],
+ "creation": "2026-05-12 10:25:59.836920",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "attendance_date",
+  "status",
+  "check_in",
+  "check_out",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "SME Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attendance_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Attendance Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Present\nAbsent\nHalf Day\nOn Leave",
+   "reqd": 1
+  },
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Time",
+   "label": "Check In"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Time",
+   "label": "Check Out"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SME Attendance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-12 11:23:38.790882",
+ "modified_by": "Administrator",
+ "module": "SMEFlow HR",
+ "name": "SME Attendance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SME HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SME Employee",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee",
+ "track_changes": 1
 }
