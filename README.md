@@ -1,33 +1,39 @@
-### SMEFlow ERP
+# SMEFlow ERP
 
-HR and Operation ERP for SMEs
+A lightweight HR and operations management system built on [Frappe Framework](https://frappeframework.com), designed for small and medium-sized enterprises (SMEs) in Africa.
 
-### Installation
+## Features
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- **Employee Management** — maintain staff records, designations, and employment details
+- **Attendance Tracking** — log daily attendance with check-in/check-out times
+- **Leave Management** — apply for and approve leave with auto day calculation
+- **Payroll Engine** — process monthly payroll with allowances, deductions, and auto gross/net pay calculation
+- **Expense Claims** — submit and approve staff expense claims by category
+
+## Tech Stack
+
+- [Frappe Framework](https://frappeframework.com) v15
+- [ERPNext](https://erpnext.com) v15
+- Python 3
+- MariaDB
+
+## Installation
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app smeflow_erp
+cd ~/frappe-bench
+bench get-app https://github.com/Francesscodes/SMEFlow-ERP.git
+bench --site your-site-name install-app smeflow_erp
+bench --site your-site-name migrate
 ```
 
-### Contributing
+## User Roles
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+| Role | Access |
+|---|---|
+| SME HR Manager | Full access to all modules |
+| SME Finance | Payroll and Expense management |
+| SME Employee | Submit leave and expense claims |
 
-```bash
-cd apps/smeflow_erp
-pre-commit install
-```
+## Built By
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
+[Francess Ekezie](https://github.com/Francesscodes) — Backend Engineer & Technical Product Manager
