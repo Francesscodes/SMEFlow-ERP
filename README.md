@@ -22,7 +22,7 @@ Process monthly payroll with basic salary, transport allowance, housing allowanc
 Staff can submit expense claims by category (Travel, Meals, Supplies, Communication, etc.) with an approval workflow moving from Draft to Pending Approval to Approved/Paid.
 
 ### Analytics Dashboard
-A real-time HR overview dashboard showing total active employees, today's attendance (present/absent), pending leave applications, unpaid payroll count, and pending expense claims — with quick-access links to every module.
+A real-time HR overview dashboard showing total active employees, today's attendance (present/absent), pending leave applications, unpaid payroll count, and pending expense claims with quick-access links to every module.
 
 ---
 
@@ -88,5 +88,4 @@ The SMEFlow Dashboard (`/app/smeflow-dashboard`) provides a real-time overview o
 
 ## Built By
 
-[Francess Ekezie](https://github.com/Francesscodes) — Backend Engineer & Technical Product Manager  
-Built as part of the Tech4Dev Women Techsters Initiative Backend Engineering track.
+[Francess Ekezie](https://github.com/Francesscodes) — Backend Engineer 
